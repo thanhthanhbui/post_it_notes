@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root "static_notes#home"
+  root "notes#home"
 
-  get "/about", to: "static_notes#about"
-  
+  get "/about", to: "notes#about"
+
   resources :notes
 end
